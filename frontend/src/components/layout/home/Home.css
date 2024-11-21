@@ -1,0 +1,21 @@
+.banner::after {
+  content: '';
+  width: 100vw;
+  height: 100vmin;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-1vmax);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
